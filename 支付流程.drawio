@@ -1,9 +1,56 @@
-<mxfile host="app.diagrams.net" modified="2023-05-01T04:53:50.020Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.64" version="21.2.3" etag="LAgLBim0kIzJh7hWxXwd" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-01T05:07:39.059Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.64" etag="XZ_Le2whKglAS-C625C9" version="21.2.3" type="github">
   <diagram name="第 1 页" id="t8W59wiklE4XqMdszMH8">
-    <mxGraphModel>
+    <mxGraphModel dx="1038" dy="682" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="bDvReHvAfHpfdky5hFMR-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.052;entryY=0.492;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="bDvReHvAfHpfdky5hFMR-1" target="bDvReHvAfHpfdky5hFMR-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="145" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bDvReHvAfHpfdky5hFMR-1" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="255" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bDvReHvAfHpfdky5hFMR-2" value="&lt;pre style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;充值请求&lt;br&gt;&lt;/font&gt;https://[serviceIp]:[port]&lt;br style=&quot;font-size: 11px;&quot;&gt;/user_api/alipay/pay/{total}/{userId}&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="195" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bDvReHvAfHpfdky5hFMR-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bDvReHvAfHpfdky5hFMR-5" target="bDvReHvAfHpfdky5hFMR-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bDvReHvAfHpfdky5hFMR-5" value="根据用户信息生成订单存储" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="180" y="245" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bDvReHvAfHpfdky5hFMR-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bDvReHvAfHpfdky5hFMR-6" target="bDvReHvAfHpfdky5hFMR-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="145" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bDvReHvAfHpfdky5hFMR-11" value="支付" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="bDvReHvAfHpfdky5hFMR-9">
+          <mxGeometry x="-0.2533" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bDvReHvAfHpfdky5hFMR-6" value="跳转到支付界面" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.4;arrowSize=0.4;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="330" y="245" width="105" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bDvReHvAfHpfdky5hFMR-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.027;entryY=0.398;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="bDvReHvAfHpfdky5hFMR-10" target="bDvReHvAfHpfdky5hFMR-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bDvReHvAfHpfdky5hFMR-10" value="Http Post回调" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="255" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bDvReHvAfHpfdky5hFMR-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bDvReHvAfHpfdky5hFMR-27" target="bDvReHvAfHpfdky5hFMR-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bDvReHvAfHpfdky5hFMR-27" value="判断支付状态&lt;br&gt;获取订单信息&lt;br&gt;更新订单状态" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/windows_server.svg;" vertex="1" parent="1">
+          <mxGeometry x="650" y="265" width="41" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bDvReHvAfHpfdky5hFMR-29" value="Mysql数据存储" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/database_cube.svg;" vertex="1" parent="1">
+          <mxGeometry x="740" y="265" width="45" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
